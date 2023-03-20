@@ -1,0 +1,20 @@
+export path=(
+  "$HOME/bin"
+  "$JAVA_HOME/bin"
+  "$GEM_HOME/bin"
+  "$GOPATH/bin"
+  "$HOME/.cargo/bin"
+  "/usr/local/opt/ruby/bin"
+  "/usr/local/opt/python/libexec/bin"
+  "/opt/homebrew/bin"
+  "/usr/local/bin"
+  "/usr/local/sbin"
+  "/bin"
+  "/usr/bin"
+  "/usr/sbin"
+  "/sbin"
+  "/programs/flutter/bin"
+)
+
+export EDITOR="gedit"
+export ZIM_HOME="$HOME/.zim"

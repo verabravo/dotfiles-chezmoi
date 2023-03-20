@@ -1,0 +1,14 @@
+[".zim"]
+    type = "git-repo"
+    url = "https://github.com/zimfw/zimfw.git"
+    refreshPeriod = "168h"
+
+["bin/dot"]
+    type = "git-repo"
+    url = "https://github.com/anishathalye/dotbot.git"
+    refreshPeriod = "168h"
+
+["bin/z"]
+    type = "git-repo"
+    url = "https://github.com/rupa/z.git"
+    refreshPeriod = "168h"
