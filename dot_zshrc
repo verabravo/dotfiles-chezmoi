@@ -15,16 +15,15 @@ source ${ZIM_HOME}/init.zsh
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_HIGHLIGHT_MAXLENGTH=300
 
-source "$(chezmoi source-path)/shell/init.sh"
+source "$(chezmoi source-path)/custom_files/shell/init.sh"
 
-fpath=("$(chezmoi source-path)/shell/themes" "$(chezmoi source-path)/shell/completions" "$(chezmoi source-path)/shell/themes" "$(chezmoi source-path)/shell/completions" $fpath)
+fpath=("$(chezmoi source-path)/custom_files/shell/themes" "$(chezmoi source-path)/custom_files/shell/completions" "$(chezmoi source-path)/custom_files/shell/themes" "$(chezmoi source-path)/custom_files/shell/completions" $fpath)
 
 autoload -Uz promptinit && promptinit
 #prompt ${DOTLY_THEME:-codely}
 
-source "$(chezmoi source-path)/shell/zsh/bindings/dot.zsh"
-source "$(chezmoi source-path)/shell/zsh/bindings/reverse_search.zsh"
-source "$(chezmoi source-path)/shell/zsh/key-bindings.zsh"
+source "$(chezmoi source-path)/custom_files/shell/zsh/bindings/reverse_search.zsh"
+source "$(chezmoi source-path)/custom_files/shell/zsh/key-bindings.zsh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

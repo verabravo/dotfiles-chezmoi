@@ -1,0 +1,92 @@
+<keymap version="1" name="bytaj" parent="$default">
+  <action id="$Redo">
+    <keyboard-shortcut first-keystroke="shift ctrl z" />
+    <keyboard-shortcut first-keystroke="shift alt back_space" />
+    <keyboard-shortcut first-keystroke="ctrl y" />
+  </action>
+  <action id="ChooseRunConfiguration">
+    <keyboard-shortcut first-keystroke="alt r" />
+  </action>
+  <action id="CloseEditor">
+    <keyboard-shortcut first-keystroke="alt w" />
+  </action>
+  <action id="EditSourceInNewWindow">
+    <keyboard-shortcut first-keystroke="shift enter" />
+  </action>
+  <action id="EditorDecreaseFontSize">
+    <mouse-shortcut keystroke="control button142" />
+  </action>
+  <action id="EditorDeleteLine" />
+  <action id="EditorIncreaseFontSize">
+    <mouse-shortcut keystroke="control button143" />
+  </action>
+  <action id="ExternalSystem.ProjectRefreshAction">
+    <keyboard-shortcut first-keystroke="ctrl alt o" />
+  </action>
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="shift ctrl y" />
+  </action>
+  <action id="GotoAction" />
+  <action id="NextSplitter">
+    <keyboard-shortcut first-keystroke="shift ctrl q" />
+  </action>
+  <action id="OpenInRightSplit">
+    <mouse-shortcut keystroke="alt button1 doubleClick" />
+    <keyboard-shortcut first-keystroke="shift f4" />
+  </action>
+  <action id="OptimizeImports">
+    <keyboard-shortcut first-keystroke="shift ctrl o" />
+  </action>
+  <action id="Refactorings.QuickListPopupAction">
+    <keyboard-shortcut first-keystroke="shift ctrl alt t" />
+    <keyboard-shortcut first-keystroke="shift ctrl r" />
+  </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+    <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
+  <action id="ReplaceInPath" />
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="ctrl alt d" />
+  </action>
+  <action id="Run">
+    <keyboard-shortcut first-keystroke="shift f10" />
+    <keyboard-shortcut first-keystroke="ctrl alt r" />
+  </action>
+  <action id="SelectInProjectView">
+    <keyboard-shortcut first-keystroke="shift ctrl a" />
+  </action>
+  <action id="ShowNavBar">
+    <keyboard-shortcut first-keystroke="alt home" />
+    <keyboard-shortcut first-keystroke="alt d" />
+  </action>
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="alt h" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="alt v" />
+  </action>
+  <action id="Terminal.OpenInTerminal">
+    <keyboard-shortcut first-keystroke="alt t" />
+  </action>
+  <action id="UpdateRunningApplication" />
+  <action id="UsageGrouping.FlattenModules" />
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl f10" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="ctrl alt f10" />
+  </action>
+  <action id="uuidgenerator.on-demand-popup">
+    <keyboard-shortcut first-keystroke="shift alt u" second-keystroke="shift alt p" />
+  </action>
+  <action id="uuidgenerator.random">
+    <keyboard-shortcut first-keystroke="shift alt u" second-keystroke="shift alt u" />
+  </action>
+  <action id="uuidgenerator.reformat">
+    <keyboard-shortcut first-keystroke="shift alt u" second-keystroke="shift alt r" />
+  </action>
+  <action id="uuidgenerator.to-clipboard">
+    <keyboard-shortcut first-keystroke="shift alt u" second-keystroke="shift alt c" />
+  </action>
+</keymap>

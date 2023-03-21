@@ -1,1 +1,1 @@
-source "$(chezmoi source-path)/shell/init.sh"
+source "$(chezmoi source-path)/custom_files/shell/init.sh"
