@@ -16,5 +16,6 @@ export path=(
   "/programs/flutter/bin"
 )
 
-export EDITOR="gedit"
+export EDITOR="nano"
 export ZIM_HOME="$HOME/.zim"
+export NVM_DIR="$HOME/.nvm"

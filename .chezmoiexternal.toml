@@ -7,3 +7,9 @@
     type = "git-repo"
     url = "https://github.com/rupa/z.git"
     refreshPeriod = "168h"
+
+["bin/fzf-docker"]
+    type = "git-repo"
+    url = "https://github.com/MartinRamm/fzf-docker.git"
+    refreshPeriod = "168h"
+
