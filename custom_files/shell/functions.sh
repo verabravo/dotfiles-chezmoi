@@ -3,7 +3,7 @@ function cdd() {
   cd "$(ls -d -- */ | fzf)" || echo "Invalid directory"
 }
 
-unction j() {
+function j() {
   fname=$(declare -f -F _z)
 
   [ -n "$fname" ] || source "$HOME/bin/z/z.sh"
