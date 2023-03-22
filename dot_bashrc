@@ -1,1 +1,0 @@
-source "$(chezmoi source-path)/custom_files/shell/init.sh"

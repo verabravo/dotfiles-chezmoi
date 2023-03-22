@@ -15,7 +15,7 @@ source ${ZIM_HOME}/init.zsh
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_HIGHLIGHT_MAXLENGTH=300
 
-source "$(chezmoi source-path)/custom_files/shell/init.sh"
+{{ template "aliases.sh" . }}
 
 fpath=("$(chezmoi source-path)/custom_files/shell/themes" "$(chezmoi source-path)/custom_files/shell/completions" "$(chezmoi source-path)/custom_files/shell/themes" "$(chezmoi source-path)/custom_files/shell/completions" $fpath)
 

@@ -1,9 +1,18 @@
 alias sudo='sudo '
 
 alias grep='grep --color=auto'
+
+{{- if lookPath "bat" }}
+alias cat=bat
+{{- else if lookPath "batcat" }}
 alias cat='batcat --style=plain --paging=never'
+{{- end }}
+
+{{- if lookPath "exa" }}
 alias ls='exa --group-directories-first'
 alias tree='exa -T'
+{{- end }}
+
 alias ..="cd .."
 alias ...="cd ../.."
 alias ll="ls -l"
