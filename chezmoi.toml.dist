@@ -1,0 +1,7 @@
+encryption = "age"
+[age]
+    identity = "$PATH_TO_FIND/key_file_name"
+    recipient = "age1..."
+[data]
+    email = "example@example.com"
+    username = "example"

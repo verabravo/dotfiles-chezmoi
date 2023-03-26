@@ -1,5 +1,13 @@
 {{- if eq .chezmoi.osRelease.id "ubuntu" -}}
 #!/bin/sh
+{{- end}}
+
+if [ ! -f ${HOME}/.config/chezmoi/chezmoi.toml ]; then
+  mkdir -p ${HOME}/.config/chezmoi
+  cp $(chezmoi source-path)/src/chezmoi.toml.dist ${HOME}/.config/chezmoi/chezmoi.toml
+fi
+
+{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
 
 sudo apt install -y zsh
 chsh -s $(which zsh)
@@ -8,11 +16,16 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 
-
 sudo apt install -y neovim
 sudo apt install -y exa
 sudo apt install -y bat
 sudo apt install -y fzf
 sudo apt install -y ripgrep
+sudo apt install -y flameshot
+#sudo apt install -y age
 
-{{- end}}
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'Screenshot'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'flameshot gui'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>space'
+{{ end}}

@@ -1,9 +1,6 @@
-custom_files/
-README.md
-chezmoi.toml.dist
 {{ if eq .chezmoi.username "vera" }}
-.extra_bash_function_personal.sh
+.extra_bash_function_work.sh
 {{ end }}
 {{ if ( or (eq .chezmoi.username "bytaj" ) (eq .chezmoi.username "username") ) }}
-.extra_bash_function_work.sh
+.extra_bash_function_personal.sh
 {{ end }}
