@@ -1,3 +1,11 @@
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+{{- else if lookPath "chezmoi" }}
+PATH="$HOME/bin:$PATH"
+{{- end }}
+
+
 {{ template "aliases.sh" . }}
 
 source "$(chezmoi source-path)/custom_files/shell/exports.sh"
