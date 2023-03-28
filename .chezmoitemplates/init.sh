@@ -1,7 +1,4 @@
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-{{ if lookPath "chezmoi" }}
+{{ if not lookPath "chezmoi" }}
 PATH="$HOME/bin:$PATH"
 {{- end }}
 
