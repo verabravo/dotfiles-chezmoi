@@ -5,11 +5,24 @@ My Personal dotfiles managed by [Chezmoi](https://www.chezmoi.io) ([GitHub repo]
 
 ## How to make the setup
 
-Run the next commands for Ubuntu:
+### Ubuntu
+
+#### Pre install
+
+Run the next commands:
 
 ```
-sudo apt install curl
-sudo apt install git
+sudo apt install -y curl git
 ```
 
-And then copy the `chezmoi.toml.dist` file in `$HOME\.config\chezmoi.toml`
+Copy the `chezmoi.toml.dist` file in `$HOME\.config\chezmoi.toml` and fill it with the correct information
+
+Download and install [Meslo Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip)
+
+
+
+#### After install
+
+Run `zsh ${ZIM_HOME}/zimfw.zsh init -q`
+
+Run `chezmoi -v apply`
