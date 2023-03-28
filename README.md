@@ -26,3 +26,12 @@ Download and install [Meslo Font](https://github.com/ryanoasis/nerd-fonts/releas
 Run `zsh ${ZIM_HOME}/zimfw.zsh init -q`
 
 Run `chezmoi -v apply`
+
+For Rofi and flameshot correct working, you have to desactivate Wayland
+`sudo nano /etc/gdm3/custom.conf`
+
+Search the WaylandEnable and uncomment or add:
+`WaylandEnable=false`
+
+Restart GDM
+`sudo systemctl restart gdm3`
