@@ -1,4 +1,4 @@
-{{ if not lookPath "chezmoi" }}
+{{ if eq "" lookPath "chezmoi" }}
 PATH="$HOME/bin:$PATH"
 {{- end }}
 
