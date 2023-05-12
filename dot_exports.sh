@@ -14,6 +14,7 @@ export path=(
   "/usr/sbin"
   "/sbin"
   "/programs/flutter/bin"
+  "/snap/bin"
 )
 
 export EDITOR="nano"
