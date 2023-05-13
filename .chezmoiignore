@@ -4,6 +4,6 @@ chezmoi.toml.dist
 {{ if eq .chezmoi.username "vera" }}
 .extra_bash_function_personal.sh
 {{ end }}
-{{ if ( or (eq .chezmoi.username "bytaj" ) (eq .chezmoi.username "username") ) }}
+{{ if eq .chezmoi.username "bytaj" }}
 .extra_bash_function_work.sh
 {{ end }}
