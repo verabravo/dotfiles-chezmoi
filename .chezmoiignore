@@ -1,4 +1,5 @@
 custom_files/
+custom_scripts/
 README.md
 chezmoi.toml.dist
 {{ if eq .chezmoi.username "vera" }}
