@@ -4,7 +4,7 @@ current_dir="$(chezmoi source-path)/custom_scripts/${current_so}"
 if [ "$#" -eq 1 ]; then
     folder_name="$1"
     current_dir="$(chezmoi source-path)/custom_scripts/${current_so}/${folder_name}"
-elif [ "$#" -eq 2 ]; then
+elif [ "$#" -ge 2 ]; then
     folder_name="$1"
     selected_script="$2.sh"
     current_dir="$(chezmoi source-path)/custom_scripts/${current_so}/${folder_name}"
