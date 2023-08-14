@@ -20,6 +20,7 @@
   <action id="EditorIncreaseFontSize">
     <mouse-shortcut keystroke="control button143" />
   </action>
+  <action id="ExpressionTypeInfo" />
   <action id="ExternalSystem.ProjectRefreshAction">
     <keyboard-shortcut first-keystroke="ctrl alt o" />
   </action>
@@ -76,6 +77,9 @@
   </action>
   <action id="android.deploy.CodeSwap">
     <keyboard-shortcut first-keystroke="ctrl alt f10" />
+  </action>
+  <action id="osmedile.intellij.stringmanip.SwitchCasePopup">
+    <keyboard-shortcut first-keystroke="shift ctrl p" />
   </action>
   <action id="uuidgenerator.on-demand-popup">
     <keyboard-shortcut first-keystroke="shift alt u" second-keystroke="shift alt p" />
