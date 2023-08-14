@@ -1,4 +1,4 @@
-{{ if eq .chezmoi.username "vera" }}
+{{ if ( or (eq .chezmoi.username "vera" ) (eq .chezmoi.username "vant") ) }}
 .extra_bash_function_work.sh
 {{ end }}
 {{ if ( or (eq .chezmoi.username "bytaj" ) (eq .chezmoi.username "username") ) }}
