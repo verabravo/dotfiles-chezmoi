@@ -1,3 +1,4 @@
+export GOPATH="/usr/local/go"
 export path=(
   "$HOME/bin"
   "$JAVA_HOME/bin"
